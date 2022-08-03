@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Meta setup -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="decription" content="" />
+    <meta name="author" content="Snir Harari" />
+
+    <!-- Title -->
+    <title>S-R Network</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="./img/fav.png" />
+
+    <!-- Include Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+
+    <!-- youtube-video css -->
+    <link rel="stylesheet" href="./css/modal-video.min.css" />
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body onload="document.forms.reset();">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- header area start -->
+    <div class="header">
+      <div class="container">
+        <div class="header-wrapper text-center">
+          <a href="index.html">
+            <img src="img/logo.png" alt="images not found" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- header area end -->
+
+    <!-- hero area start -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-6 order-2 order-md-1">
+              <div class="hero-left text-right text-white">
+                <h4 dir="rtl">איזה כיף זה מיינקראפט, נכון?</h4>
+                <p dir="rtl">
+                  הגיע הזמן להצטרף לשרת המיינקראפט שלנו!
+                  <a href="#video_area">הצרפו עכשיו</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-6 order-1 order-md-2">
+              <div class="hero-right">
+                <img src="img/wave.png" alt="images not found" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero area end -->
+
+    <!-- video area start -->
+    <div class="video" id="video_area">
+      <div class="container">
+        <div class="video-wrapper">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="video-left">
+                <img src="img/video.png" alt="images not found" />
+                <img
+                  class="js-video-button"
+                  data-video-id="wtBuseVIzE4"
+                  id="play"
+                  src="img/play.png"
+                  alt="images not found"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <div class="video-right text-right">
+                <h4 dir="rtl">אז איך משחקים?</h4>
+                <p dir="rtl" style="color: #fff; font-weight: 300">
+                  זה נורא פשוט! <br />כל מה שאתם צריכים לעשות זה רק להתחבר ל-<br />
+                  <span style="font-weight: 700">S-R.cloud</span>
+                </p>
+                <a
+                  class="js-video-button"
+                  data-video-id="wtBuseVIzE4"
+                  id="play"
+                  src="img/play.png"
+                  dir="rtl"
+                  href="#"
+                  >צפו בסרטון
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- video area end -->
+
+    <!-- newslatter area start -->
+    <div class="footer">
+      <div class="newlatter">
+        <div class="container">
+          <div class="newslatter-wrapper">
+            <div class="row">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-8">
+                <div class="newslatter-para text-right">
+                  <div class="social">
+                    <a href="index.html"> </a>
+                    <div class="social-right">
+                      <ul>
+                        <li>
+                          <a href="https://www.instagram.com/snir_harari/"
+                            ><span><i class="fab fa-instagram"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://discord.com/invite/H97TeRHRDg/"
+                            ><span><i class="fa-brands fa-discord"></i></span
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- newslatter area end -->
+
+    <!-- Main jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Fontawesome Script -->
+    <script src="https://kit.fontawesome.com/7749c9f08a.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f07047d5fd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- youtube-video js -->
+    <script src="js/jquery-modal-video.js"></script>
+
+    <!-- Custom jQuery -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Scroll-Top button -->
+    <a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
+
+    <script>
+      $(".js-video-button").modalVideo({
+        youtube: {
+          controls: 0,
+          nocookie: true,
+        },
+      });
+    </script>
+
+    <script>
+      $("#scroll").click(function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCcqY61M-UYIEoUDDLb5hReof-8Io4nmRA",
+        authDomain: "fir-r-development.firebaseapp.com",
+        projectId: "fir-r-development",
+        storageBucket: "fir-r-development.appspot.com",
+        messagingSenderId: "609868259741",
+        appId: "1:609868259741:web:8ebcb1da26d85b05f94f74",
+        measurementId: "G-6XHR3WZP09",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
